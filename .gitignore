@@ -1,0 +1,6 @@
+/openai-go
+/cache/
+/vendor/
+openai-go.exe
+openai-go.exe~
+.idea
