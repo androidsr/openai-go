@@ -67,9 +67,11 @@ func (m *SysOpenAiApi) Send(c *gin.Context) {
 		return
 	}
 	defer stream.Close()
+	sendMessage(userId.(string), "## "+message+"\n")
 	for {
 		response, err := stream.Recv()
 		if errors.Is(err, io.EOF) {
+			sendMessage(userId.(string), "\n\n")
 			break
 		}
 
