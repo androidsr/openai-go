@@ -6,6 +6,6 @@ database:
   driverName: "mysql"
   dataSourceName: "root:root@123123...@tcp(124.221.97.77:3306)/openai?charset=utf8"
 
-openAIKey: "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"
+openAIKey: ""
 
 static-dir: ui
